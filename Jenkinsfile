@@ -11,6 +11,7 @@ pipeline {
     //  sh 'unzip -o LT_Windows.zip'
      // sh './LT --user ${LT_USERNAME} --key ${LT_ACCESS_KEY} '
         echo 'running'
+        echo 'python --version'
     }
   }
 
