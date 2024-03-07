@@ -6,18 +6,18 @@ import json
 url = os.getenv("LT_HUB_URL")
 capabilities = {
     "build" : os.getenv("LT_BUILD_NAME"),
-    "name" : "Quick Test",
+    "name" : "Quick jenkins test",
     "platform" : "Windows 10",
     "browserName" : "Chrome",
     "version" : "88.0",
     "resolution" : "1920x1080",
-    "tunnel" : True
+    "tunnel" : false
 }
 driver = webdriver.Remote(
     desired_capabilities= capabilities,
     command_executor= url
 )
-driver.get("http://localhost:8081/")
+driver.get("https://vaneetbawa.github.io/sample_app.io/")
 driver.find_element_by_name("li3").click()
 
 textbox = driver.find_element_by_id("sampletodotext")
