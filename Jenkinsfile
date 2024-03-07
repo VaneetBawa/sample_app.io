@@ -9,7 +9,8 @@ pipeline {
     //  sh 'wget https://downloads.lambdatest.com/tunnel/v3/windows/64bit/LT_Windows.zip'
     //  sh 'sudo apt-get install zip unzip' 
     //  sh 'unzip -o LT_Windows.zip'
-      sh './LT --user ${LT_USERNAME} --key ${LT_ACCESS_KEY} '
+     // sh './LT --user ${LT_USERNAME} --key ${LT_ACCESS_KEY} '
+        echo 'running'
     }
   }
 
