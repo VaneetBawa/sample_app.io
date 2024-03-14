@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import os
 import json
+import time
 
 url = os.getenv("LT_HUB_URL")
 capabilities = {
@@ -18,7 +19,10 @@ driver = webdriver.Remote(
     command_executor= url
 )
 driver.get("https://www.crestliner.com/")
-driver.find_element_by_id("modalCloseBtn").click()
+time.sleep(10)
+#driver.find_element_by_id("modalCloseBtn").click()
+driver.find_element("id","modalCloseBtn").click()
+time.sleep(2)
 driver.find_element(By.LINK_TEXT,"Deep V").get_attribute("href");
 
 #driver.get("https://vaneetbawa.github.io/sample_app.io/")
