@@ -23,7 +23,7 @@ time.sleep(10)
 #driver.find_element_by_id("modalCloseBtn").click()
 driver.find_element("id","modalCloseBtn").click()
 time.sleep(2)
-driver.find_element(By.LINK_TEXT,"Deep V").get_attribute("href");
+driver.find_element(By.LINK_TEXT,"Deep V").get_attribute("href")
 
 #driver.get("https://vaneetbawa.github.io/sample_app.io/")
 #driver.find_element_by_name("li3").click()
